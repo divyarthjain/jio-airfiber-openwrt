@@ -4,6 +4,8 @@ How one secure-boot-locked Jio AirFiber indoor unit was opened up over UART, bac
 
 **Result:** OpenWrt boots from flash on its own, LuCI web UI works, Wi-Fi 6 runs WPA2/WPA3 mixed, and the stock flash is backed up.
 
+![The board out of its case, UART wired to an ESP32-S3 bridge for console access](docs/images/j1-wiring.jpg)
+
 ## The device
 | | |
 |---|---|
