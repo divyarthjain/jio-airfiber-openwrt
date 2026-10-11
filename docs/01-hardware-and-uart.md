@@ -19,7 +19,11 @@ Two 4-pin spots sit **at the board edge, beside the four Ethernet ports**. Neith
 | 3 (next to GND) | **Router RX** (wired to ESP32 GPIO17) |
 | 4 (last, round) | **GND**, confirmed by continuity to the shield can |
 
-All four pins confirmed. Still open: a photo of J1.
+All four pins confirmed.
+
+![J1 wired to the ESP32-S3 bridge](images/j1-wiring.jpg)
+
+The board out of its case: J1 at the edge next to the blue WAN and yellow LAN ports, green (TX) and purple (RX) wires running down to the ESP32-S3 on the breadboard.
 
 Rule that held: wire GND, TX, RX only. Never wire VCC.
 

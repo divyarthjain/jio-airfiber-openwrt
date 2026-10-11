@@ -29,6 +29,7 @@ This unit's BL2 was already the August 2023 build, so the BL2 downgrade step in 
 2. [Procedure](docs/02-procedure.md): every step in order, with commands
 3. [Gotchas](docs/03-gotchas.md): what went wrong and the fixes
 4. [Airtel AirFiber research](docs/04-airtel-aap4221zy-research.md): notes on the other router, not flashed
+5. [Results: Wi-Fi channel tuning](docs/05-results.md): before/after speed from moving off a crowded channel
 
 ## Tools
 - [`tools/uartbridge/uartbridge.ino`](tools/uartbridge/uartbridge.ino): ESP32-S3 USB to UART bridge
