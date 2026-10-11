@@ -1,0 +1,17 @@
+#!/bin/sh /etc/rc.common
+START=11
+STOP=99
+boot() {
+    TARGET_CMD='ubi read 46000000 kernel; fdt addr $(fdtcontroladdr); fdt rm /signature; bootm 0x46000000'
+    CURRENT_CMD="$(fw_printenv -n bootcmd 2>/dev/null)"
+    if [ "$CURRENT_CMD" != "$TARGET_CMD" ]; then
+        logger -t bootcmd-guard "Restoring OpenWrt bootcmd"
+        fw_setenv bootcmd "$TARGET_CMD"
+    fi
+    if fw_printenv ipaddr >/dev/null 2>&1; then
+        fw_setenv ipaddr
+    fi
+    if [ "$(fw_printenv -n bootdelay 2>/dev/null)" != "0" ]; then
+        fw_setenv bootdelay 0
+    fi
+}

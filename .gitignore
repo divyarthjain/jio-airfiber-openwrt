@@ -1,0 +1,5 @@
+*.bin
+*.itb
+backup/
+stock-backup/
+.DS_Store
