@@ -15,11 +15,11 @@ Two 4-pin spots sit **at the board edge, beside the four Ethernet ports**. Neith
 | Pin | Finding |
 |---|---|
 | 1 (square) | Not measured. Assumed VCC, **left unconnected** |
-| 2 | One of TX/RX |
-| 3 | The other of TX/RX |
+| 2 (next to VCC) | **Router TX** (wired to ESP32 GPIO18) |
+| 3 (next to GND) | **Router RX** (wired to ESP32 GPIO17) |
 | 4 (last, round) | **GND**, confirmed by continuity to the shield can |
 
-**TODO (not recorded during the session):** which of pins 2 and 3 is router TX and which is RX, and a measured voltage on pin 1. Add a photo of J1 here.
+**Still open:** pin 1 was never measured with a meter, so "VCC" is an assumption. Add a photo of J1 here.
 
 Rule that held: wire GND, TX, RX only. Never wire VCC.
 
