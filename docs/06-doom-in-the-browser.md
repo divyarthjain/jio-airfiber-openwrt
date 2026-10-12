@@ -39,4 +39,4 @@ Both are covered by `check.py`.
 2. The `Sec-WebSocket-Key` header was matched case-sensitively. HTTP header names are case-insensitive and some clients send them in lowercase, so the server answered the upgrade with the HTML page. Found with Node's built-in WebSocket client. Fix: case-insensitive header lookup.
 
 ## Status
-Measured 70 fps from the router to a test client on the Mac over Wi-Fi (before fix 2, with a client that sends capitalised headers). The fixed build passes `check.py` locally. A real browser session against the router is not yet confirmed.
+Working. Confirmed in a real browser against the router on 12 Oct 2026. Measured 70 fps from the router to a test client on the Mac over Wi-Fi. The fixed build passes `check.py`.
