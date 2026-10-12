@@ -32,12 +32,14 @@ This unit's BL2 was already the August 2023 build, so the BL2 downgrade step in 
 3. [Gotchas](docs/03-gotchas.md): what went wrong and the fixes
 4. [Airtel AirFiber research](docs/04-airtel-aap4221zy-research.md): notes on the other router, not flashed
 5. [Results: Wi-Fi channel tuning](docs/05-results.md): before/after speed from moving off a crowded channel
+6. [Doom in the browser](docs/06-doom-in-the-browser.md): Doom running on the router, streamed to a browser tab
 
 ## Tools
 - [`tools/uartbridge/uartbridge.ino`](tools/uartbridge/uartbridge.ino): ESP32-S3 USB to UART bridge
 - [`tools/tftp_server.py`](tools/tftp_server.py): small read-only TFTP server
 - [`tools/bootcmd-guard`](tools/bootcmd-guard): OpenWrt init script that restores the U-Boot boot command
 - [`tools/backup.sh`](tools/backup.sh): dumps all MTD partitions over SSH
+- [`tools/doom-web/`](tools/doom-web/): browser Doom for the router (build, play, self-check)
 
 ## Not in this repo (on purpose)
 Flash dumps (they hold factory MACs and manufacturing data), serial numbers, MAC addresses, sticker passwords and Wi-Fi passwords.

@@ -3,3 +3,4 @@
 backup/
 stock-backup/
 .DS_Store
+tools/doom-web/build/
